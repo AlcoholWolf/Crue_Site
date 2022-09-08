@@ -1,0 +1,578 @@
+/* 오른쪽 -> 왼쪽 */
+.Right_Slide_In{
+    animation: Right_Slide_In 1s;
+}
+
+@keyframes Right_Slide_In {
+    from{
+        margin-left: 100%;
+    }
+
+    to{
+        margin-left: 0%;
+    }
+}
+
+/* 왼쪽 -> 오른쪽 */
+.Left_Slide_In{
+    animation: Left_Slide_In 1s;
+}
+
+@keyframes Left_Slide_In {
+    from{
+        margin-right: 100%;
+    }
+
+    to{
+        margin-right: 0%;
+    }
+}
+
+/* 아래 -> 위 */
+
+#R2{
+    left: 2%;
+}
+#R3{
+    top: -3%;
+}
+
+.circle1{
+    animation: Slide_RF 2s infinite;
+    position: absolute;
+    top: 120%;
+    color: white;
+    font-size: 200%;
+}
+
+@keyframes Slide_RF {
+    from{
+        right: 120%;
+    }
+
+    to{
+        right: -7%;
+    }
+}
+
+.circle4{
+    animation: Slide_RF2 2s infinite;
+    position: absolute;
+    top: 120%;
+    color: white;
+    font-size: 200%;
+}
+
+@keyframes Slide_RF2 {
+    from{
+        left: 120%;
+    }
+
+    to{
+        left: -7%;
+    }
+}
+
+.circle2{
+    animation: Slide_Up 2s infinite;
+    position: absolute;
+    top: -40%;
+    color: white;
+    font-size: 200%;
+}
+
+@keyframes Slide_Up {
+    from{
+        top: -20%;
+    }
+
+    to{
+        top: 107%;
+    }
+}
+
+.circle3{
+    animation: Slide_DW 2s infinite;
+    position: absolute;
+    top: 120%;
+    color: white;
+    font-size: 200%;
+}
+
+@keyframes Slide_DW {
+    from{
+        top: 120%;
+    }
+
+    100%{
+        top: -7%;
+    }
+}
+
+/* 트렌제이션 */
+#TranZ_250{
+    transition: all 250ms;
+}
+
+#TranZ_500{
+    transition: all 500ms;
+}
+
+#TranZ_750{
+    transition: all 750ms;
+}
+
+#TranZ_2s{
+    animation: T2 2s;
+    position: absolute;
+    top: 99%;
+    right: 0%;
+    font-size: 200%;
+    color: black;
+}
+
+@keyframes T2 {
+    from{
+        color: white;
+    }
+
+    to{
+        color: black;
+    }
+}
+
+.Menu2L1{
+    position: -webkit-sticky;
+    position: sticky;
+    margin-left: 3%;
+    margin-right: 4%;
+    font-variant: small-caps;
+    font-weight: bold;
+    padding-bottom: -20px;
+    z-index: 1;
+    transition: all 500ms 0ms;
+    color: rgb(255, 255, 255);
+}
+
+.Menu2L2{
+    position: -webkit-sticky;
+    position: sticky;
+    margin-left: 3%;
+    margin-right: 4%;
+    font-variant: small-caps;
+    font-weight: bold;
+    padding-bottom: -20px;
+    z-index: 1;
+    transition: all 500ms 250ms;
+    color: rgb(255, 255, 255);
+}
+
+.Menu2L3{
+    position: -webkit-sticky;
+    position: sticky;
+    margin-left: 3%;
+    margin-right: 4%;
+    font-variant: small-caps;
+    font-weight: bold;
+    padding-bottom: -20px;
+    z-index: 1;
+    transition: all 500ms 500ms;
+    color: rgb(255, 255, 255);
+}
+
+.Menu2L4{
+    position: -webkit-sticky;
+    position: sticky;
+    margin-left: 3%;
+    margin-right: 4%;
+    font-variant: small-caps;
+    font-weight: bold;
+    padding-bottom: -20px;
+    z-index: 1;
+    transition: all 500ms 750ms;
+    color: rgb(255, 255, 255);
+}
+
+.Menu2L5{
+    position: -webkit-sticky;
+    position: sticky;
+    margin-left: 3%;
+    margin-right: 4%;
+    font-variant: small-caps;
+    font-weight: bold;
+    padding-bottom: -20px;
+    z-index: 1;
+    transition: all 500ms 1000ms;
+    color: rgb(255, 255, 255);
+}
+
+.Menu2L6{
+    position: -webkit-sticky;
+    position: sticky;
+    margin-left: 3%;
+    margin-right: 4%;
+    font-variant: small-caps;
+    font-weight: bold;
+    padding-bottom: -20px;
+    z-index: 1;
+    transition: all 500ms 1250ms;
+    color: rgb(255, 255, 255);
+}
+
+@keyframes Pop52 {
+    from{
+        left: -110%;
+    }
+
+    1%{
+        left: 3%;
+        color: white;
+    }
+
+    to{
+        color: white;
+        left: 3%;
+    }
+    
+    end{
+        color: white;
+    }
+}
+
+#POP{
+    animation: ROOT 4s;
+}
+
+@keyframes ROOT{
+    from{
+        color: white;
+    }
+    25%{
+        transform: rotate(119deg)
+            rotateX(274deg)
+            rotateY(11deg)
+            rotateZ(238deg)
+            perspective(500px)
+            scale(2)
+            translate(50px,10px)
+            skew(22deg,53deg);
+        transform-origin: 65% 55% -99px;
+    }
+    50%{
+        transform: rotate(195deg)
+            rotateX(155deg)
+            rotateY(155deg)
+            rotateZ(256deg)
+            perspective(1200px)
+            scale(0.9)
+            translate(40px,-60px)
+            skew(161deg,73deg);
+        transform-origin: 31% 27% -208px;
+    }
+    75%{
+        transform: rotate(184deg)
+            rotateX(273deg)
+            rotateY(182deg)
+            rotateZ(80deg)
+            perspective(1500px)
+            scale(1.6)
+            translate(20px,30px)
+            skew(100deg,85deg);
+        transform-origin: 83% 81% -99px;
+    }
+    to{
+        transform: perspective(700px);
+        transform-origin: center center;
+    }
+}
+
+
+/* z방향 원 */
+/* #z_index_of_3D_xz{
+	transform: rotateX(270deg)
+		perspective(700px);
+	transform-origin: center center;
+    z-index: 1;
+} */
+
+.Box{
+    border: 4px solid rgb(0, 0, 0);
+    padding: 50px;
+    position: fixed;
+    left: 110%;
+    top: 25%;
+    color: black;
+    transition: all 200ms;
+    background-color: black;
+}
+
+#BackImage{
+    z-index: -1;
+}
+
+/* x방향 상자 */
+
+#x_index_of_3D_yx_1{
+    animation: Circle_Rool 24s 0s infinite;
+}
+/* 랴이 */
+#x_index_of_3D_yx_2{
+    animation: Circle_Rool 24s 3s infinite;
+    background: image();
+}
+#x_index_of_3D_yx_3{
+    animation: Circle_Rool 24s 6s infinite;
+}
+#x_index_of_3D_yx_4{
+    animation: Circle_Rool 24s 9s infinite;
+}
+#x_index_of_3D_yx_5{
+    animation: Circle_Rool 24s 12s infinite;
+}
+#x_index_of_3D_yx_6{
+    animation: Circle_Rool 24s 15s infinite;
+}
+#x_index_of_3D_yx_7{
+    animation: Circle_Rool 24s 18s infinite;
+}
+#x_index_of_3D_yx_8{
+    animation: Circle_Rool 24s 21s infinite;
+}
+@keyframes Circle_Rool {
+    /* 맨 왼쪽 끝단 (8/8) aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa*/
+    from{
+        transform: rotateY(270deg)
+            perspective(300px)
+            scale(1);
+        transform-origin: center center;
+        left: 10%;
+        z-index: -3;
+        border: 4px solid rgb(0, 0, 0);
+        color: rgb(0, 0, 0);
+        transition: all 200ms;
+        top: 0%;
+    }
+    4%{
+    transform: rotateY(290deg)
+        perspective(300px)
+        scale(1);
+    transform-origin: center center;
+    left: 10%;
+    z-index: 2;
+    border: 4px solid white;
+    color: rgb(0, 0, 0);
+    transition: all 200ms;
+    top: 35%;
+    }
+    /* 왼쪽 앞 대각선 (1/8) AAAA */
+    12.5%{
+        transform: rotateY(315deg)
+            perspective(300px)
+            scale(1.5);
+        transform-origin: center center;
+        left: 20.5%;
+        z-index: 2;
+        border: 4px solid white;
+        color: white;
+        transition: all 200ms;
+        padding: 50px;
+        top: 30%;
+    }
+    /* 중앙 메인 (2/8) aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa*/
+    25%{
+        transform: rotateY(360deg)
+            perspective(300px)
+            scale(2);
+        transform-origin: center center;
+        left: 45%;
+        z-index: 3;
+        border: 4px solid white;
+        color: white;
+        transition: all 200ms;
+        padding-left: 10%;
+        top: 25%;
+    }
+    /* 오른쪽 앞 대각선 (3/8) AAAA */
+    30%{
+        transform: rotateY(405deg)
+            perspective(300px)
+            scale(1.5);
+        transform-origin: center center;
+        left: 69.5%;
+        z-index: 2;
+        border: 4px solid white;
+        color: white;
+        transition: all 200ms;
+        padding: 50px;
+        top: 35%;
+        background: black;
+    }
+    /* 중앙 서브 메인 */
+    /* 37.5%{
+        transform: rotateY(405deg)
+            perspective(300px)
+            scale(1.5);
+        transform-origin: center center;
+        left: 39.5%;
+        z-index: -1;
+        border: 4px solid white;
+        color: white;
+        transition: all 200ms;
+        padding: 50px;
+        top: 50%;
+    } */
+
+    /* 40%{
+        transform: rotateY(810deg)
+            perspective(300px)
+            scale(1.5);
+        transform-origin: center center;
+        left: 39.5%;
+        z-index: -1;
+        border: 4px solid white;
+        color: rgb(0, 0, 0);
+        transition: all 200ms;
+        padding-top: 15%;
+        top: 50%;
+    } */
+    
+    /* 맨 오른쪽 끝단 (4/8) aaaaaaaaaaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaaaaaaaaaaaa*/
+    50%{
+        transform: rotateY(450deg)
+            perspective(300px)
+            scale(1);
+        transform-origin: center center;
+        left: 80%;
+        z-index: -2;
+        border: 4px solid rgb(0, 0, 0);
+        color: rgb(0, 0, 0);
+        transition: all 200ms;
+        top: 45%;
+        background: black;
+        padding: 50px;
+    }
+    50.1%{
+        transform: rotateY(450deg)
+            perspective(300px)
+            scale(1);
+        transform-origin: center center;
+        background: white;
+        background-size: 100%;
+        padding-top: 300px;
+        padding-left: 26.5px;
+        padding-right: 26.5px;
+        padding-bottom: 0px;
+        border: 0px;
+        border-radius: 0%;
+        font-size: 0px;
+    }
+    /* 오른쪽 뒤 대각선 (5/8) AAAA */
+    62.5%{
+        transform: rotateY(495deg)
+            perspective(300px)
+            scale(0.8);
+        transform-origin: center center;
+        left: 69.5%;
+        z-index: -3;
+        transition: all 200ms;
+        top: 55%;
+        background: white;
+        background-size: 100%;
+        padding-top: 300px;
+        padding-left: 26.5px;
+        padding-right: 26.5px;
+        padding-bottom: 0px;
+        border: 0px;
+        border-radius: 0%;
+        font-size: 0px;
+    }
+    /* 중앙 가림 맨 뒤 (6/8) */
+    75%{
+        transform: rotateY(540deg)
+            perspective(300px)
+            scale(0.6);
+        transform-origin: center center;
+        left: 45%;
+        z-index: -4;
+        border: 4px solid white;
+        color: rgb(0, 0, 0);
+        transition: all 200ms;
+        top: 65%;
+        background: white;
+        background-size: 100%;
+        padding-top: 300px;
+        padding-left: 26.5px;
+        padding-right: 26.5px;
+        padding-bottom: 0px;
+        border: 0px;
+        border-radius: 0%;
+        font-size: 0px;
+    }
+    /* 왼쪽 뒤 대각선 (7/8) AAAA */
+    80%{
+        transform: rotateY(585deg)
+            perspective(300px)
+            scale(0.4);
+        transform-origin: center center;
+        left: 20.5%;
+        z-index: -2;
+        border: 4px solid white;
+        color: rgb(0, 0, 0);
+        transition: all 200ms;
+        top: 70%;
+        background: white;
+        background-size: 100%;
+        padding-top: 300px;
+        padding-left: 26.5px;
+        padding-right: 26.5px;
+        padding-bottom: 0px;
+        border: 0px;
+        border-radius: 0%;
+        font-size: 0px;
+    }
+
+    87.5%{
+        transform: rotateY(585deg)
+            perspective(300px)
+            scale(0.2);
+        transform-origin: center center;
+        left: 15.5%;
+        z-index: -2;
+        border: 4px solid rgb(255, 255, 255);
+        color: rgb(0, 0, 0);
+        transition: all 200ms;
+        top: 75%;
+        background: white;
+        background-size: 100%;
+        padding-top: 300px;
+        padding-left: 26.5px;
+        padding-right: 26.5px;
+        padding-bottom: 0px;
+        border: 0px;
+        border-radius: 0%;
+        font-size: 0px;
+    }
+
+    /* 맨 왼쪽 끝단 (8/8) */
+    to{
+        transform: rotateY(630deg)
+            perspective(300px)
+            scale(0);
+        transform-origin: center center;
+        left: 10%;
+        z-index: 2;
+        border: 4px solid rgb(0, 0, 0);
+        color: rgb(0, 0, 0);
+        transition: all 200ms;
+        top: 100%;
+        background: white;
+        background-size: 100%;
+        padding-top: 300px;
+        padding-left: 26.5px;
+        padding-right: 26.5px;
+        padding-bottom: 0px;
+        border: 0px;
+        border-radius: 0%;
+        font-size: 0px;
+    }
+}
